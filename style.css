@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+    --ff-content: 'Rubik', sans-serif;
+    --fz-title: 1.4rem;
+    --fz-content: 1.6rem;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    
+    background: #8257e5;
+    background: linear-gradient(169deg, #8257e5 0%, rgba(39,26,69,1) 100%);
+
+    display: flex;
+    place-items: center;
+
+    font-family: var(--ff-content);
+}
+
+#page{
+    margin: auto;
+}
+
+#page h1{
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 2rem;
+}
+
+#page h3{
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.64);
+}
+
+#page p{
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+#contentFlight{
+    background-color: #FFFFFF;
+   
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+
+    padding: 2.4rem 3.2rem;
+    border-top-left-radius: 2.4rem;
+    border-top-right-radius: 2.4rem;
+
+    background-image: radial-gradient(circle at left bottom, #55369c 1.5rem, transparent 0% ),
+    radial-gradient(circle at right bottom, #55369c 1.5rem, transparent 0% )
+}
+
+#flightAndDate{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#mathAndDestiny{
+    display: flex;
+    gap: 1rem;
+}
+
+#mathAndDestiny div:nth-child(1){
+    text-align: left;
+}
+
+#mathAndDestiny div:nth-child(3){
+    text-align: right;
+}
+
+
+#mathAndDestiny p{
+    font-size: 4rem;
+}
+
+#mathAndDestiny svg{
+    margin-top: 3rem;
+}
+
+
+
+
