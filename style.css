@@ -44,6 +44,7 @@ body{
     display: flex;
     flex-direction: column;
     width: 327px;
+    margin: auto;
 }
 
 .ticket h2{
@@ -190,5 +191,6 @@ footer{
     margin-top: 2rem;
     color: #FFFFFF;
     opacity: 0.64;
+
 }
 
