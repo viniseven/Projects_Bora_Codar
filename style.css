@@ -13,6 +13,7 @@
     --fz-content: 1.6rem;
 }
 
+
 body{
     width: 100vw;
     height: 100vh;
@@ -27,6 +28,9 @@ body{
 }
 
 #page{
+    display: flex;
+    flex-direction: column;
+
     margin: auto;
 }
 
@@ -36,60 +40,141 @@ body{
     margin-bottom: 2rem;
 }
 
-#page h3{
+#ticket{
+    display: flex;
+    flex-direction: column;
+    width: 327px;
+}
+
+#ticket h2{
     font-size: 1.4rem;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.64);
 }
 
-#page p{
-    font-size: 1.6rem;
+#ticket p{
+    color: rgba(0, 0, 0, 0.88);
     font-weight: 500;
+    font-size: 1.6rem;
 }
 
-#contentFlight{
-    background-color: #FFFFFF;
-   
+#flight-info{
     display: flex;
     flex-direction: column;
     gap: 2.4rem;
 
-    padding: 2.4rem 3.2rem;
     border-top-left-radius: 2.4rem;
     border-top-right-radius: 2.4rem;
 
+    background-color: #FFFFFF;
     background-image: radial-gradient(circle at left bottom, #55369c 1.5rem, transparent 0% ),
-    radial-gradient(circle at right bottom, #55369c 1.5rem, transparent 0% )
+    radial-gradient(circle at right bottom, #55369c 1.5rem, transparent 0% );
+
+    padding: 2.4rem 3.2rem;
 }
 
-#flightAndDate{
+#flight-info div{
     display: flex;
     justify-content: space-between;
 }
 
 
-#mathAndDestiny{
+#flight-info > div:nth-child(2){
     display: flex;
-    gap: 1rem;
+   flex-direction: row;
+   justify-content: space-between;
+   gap: 1rem;
+   align-items: center;
 }
 
-#mathAndDestiny div:nth-child(1){
-    text-align: left;
-}
-
-#mathAndDestiny div:nth-child(3){
-    text-align: right;
-}
-
-
-#mathAndDestiny p{
+#flight-info > div:nth-child(2) p{
     font-size: 4rem;
 }
 
-#mathAndDestiny svg{
-    margin-top: 3rem;
+#flight-number, #flight-date, #departure, #arrival{
+    display: flex;
+    flex-direction: column;
+}
+#flight-date, #arrival{
+    align-items: flex-end;
 }
 
+#departure{
+    align-items: flex-start;
+}
 
+#divider{
+    border: 1px dashed rgba(0, 0, 0, 0.32);
+    background-color: #FFFFFF;
+    flex-grow: 3;
+    width: 29.5rem;
+    margin: auto;
+}
 
+#passenger-info, #boarding-info{
+    display: flex;
+    justify-content: space-between;
+    padding: 2.4rem 3.2rem;
+}
+
+#passenger-info{
+    background-color: #FFFFFF;
+    background-image: radial-gradient(circle at left top, #55369c 1.5rem, transparent 0% ),
+    radial-gradient(circle at right top, #55369c 1.5rem, transparent 0% ),
+    radial-gradient(circle at left bottom, #55369c 1.5rem, transparent 0% ),
+    radial-gradient(circle at right bottom, #55369c 1.5rem, transparent 0% );
+}
+
+#boarding-info{
+    background-color: #FFFFFF;
+    background-image: radial-gradient(circle at left top, #55369c 1.5rem, transparent 0% ),
+    radial-gradient(circle at right top, #55369c 1.5rem, transparent 0% );
+}
+
+#boarding-info div:nth-child(1) h2{
+    margin: 1rem 0;
+}
+
+#boarding-info span{
+    background: #633BBC;
+    
+    border-radius: 8px;
+    
+    padding: 4px 8px;
+
+    color: #FFFFFF;
+}
+
+#boarding-info img{
+    width: 160px;
+    height: 160px;
+}
+
+#info-gate{
+    background-color: #FFFFFF;
+
+    text-align: center;
+
+    border-bottom-left-radius: 2.4rem;
+    border-bottom-right-radius: 2.4rem;
+
+    padding-bottom: 2.4rem;
+}
+
+#info-gate p{
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.64);
+}
+
+#info-gate span{
+    font-weight: 500;
+    
+}
+
+footer{
+    margin-top: 2rem;
+    color: #FFFFFF;
+    opacity: 0.64;
+}
 
