@@ -40,25 +40,25 @@ body{
     margin-bottom: 2rem;
 }
 
-#ticket{
+.ticket{
     display: flex;
     flex-direction: column;
     width: 327px;
 }
 
-#ticket h2{
+.ticket h2{
     font-size: 1.4rem;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.64);
 }
 
-#ticket p{
+.flight-info, .passenger-info, .boarding-info  p{
     color: rgba(0, 0, 0, 0.88);
     font-weight: 500;
     font-size: 1.6rem;
 }
 
-#flight-info{
+.flight-info{
     display: flex;
     flex-direction: column;
     gap: 2.4rem;
@@ -73,13 +73,13 @@ body{
     padding: 2.4rem 3.2rem;
 }
 
-#flight-info div{
+.flight-info div{
     display: flex;
     justify-content: space-between;
 }
 
 
-#flight-info > div:nth-child(2){
+.flight-info > div:nth-child(2){
     display: flex;
    flex-direction: row;
    justify-content: space-between;
@@ -87,7 +87,7 @@ body{
    align-items: center;
 }
 
-#flight-info > div:nth-child(2) p{
+.flight-info > div:nth-child(2) p{
     font-size: 4rem;
 }
 
@@ -103,6 +103,20 @@ body{
     align-items: flex-start;
 }
 
+#arrival{
+    position: relative;
+}
+
+#time-departure, #time-arrival, #time-add{
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+#time-add{
+    position: absolute;
+    bottom: 1rem;
+    right: -1rem;
+}
 #divider{
     border: 1px dashed rgba(0, 0, 0, 0.32);
     background-color: #FFFFFF;
@@ -111,13 +125,13 @@ body{
     margin: auto;
 }
 
-#passenger-info, #boarding-info{
+.passenger-info, .boarding-info{
     display: flex;
     justify-content: space-between;
     padding: 2.4rem 3.2rem;
 }
 
-#passenger-info{
+.passenger-info{
     background-color: #FFFFFF;
     background-image: radial-gradient(circle at left top, #55369c 1.5rem, transparent 0% ),
     radial-gradient(circle at right top, #55369c 1.5rem, transparent 0% ),
@@ -125,17 +139,17 @@ body{
     radial-gradient(circle at right bottom, #55369c 1.5rem, transparent 0% );
 }
 
-#boarding-info{
+.boarding-info{
     background-color: #FFFFFF;
     background-image: radial-gradient(circle at left top, #55369c 1.5rem, transparent 0% ),
     radial-gradient(circle at right top, #55369c 1.5rem, transparent 0% );
 }
 
-#boarding-info div:nth-child(1) h2{
+.boarding-info div:nth-child(1) h2{
     margin: 1rem 0;
 }
 
-#boarding-info span{
+.boarding-info span{
     background: #633BBC;
     
     border-radius: 8px;
@@ -145,12 +159,12 @@ body{
     color: #FFFFFF;
 }
 
-#boarding-info img{
+.boarding-info img{
     width: 160px;
     height: 160px;
 }
 
-#info-gate{
+.info-gate{
     background-color: #FFFFFF;
 
     text-align: center;
@@ -161,13 +175,13 @@ body{
     padding-bottom: 2.4rem;
 }
 
-#info-gate p{
+.info-gate p{
     font-size: 1.4rem;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.64);
 }
 
-#info-gate span{
+.info-gate span{
     font-weight: 500;
     
 }
